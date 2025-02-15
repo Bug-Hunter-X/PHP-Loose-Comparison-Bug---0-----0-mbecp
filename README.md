@@ -1,0 +1,3 @@
+# PHP Loose Comparison Bug
+
+This repository demonstrates a common, yet subtle, bug in PHP related to loose comparison (`==`) of numerical values and strings. Specifically, the comparison `0 == '0'` evaluates to `true` due to PHP's type juggling behavior.  This can lead to unexpected conditional logic and errors in your applications.  The `bug.php` file shows the erroneous code, while `bugSolution.php` provides a corrected version using strict comparison (`===`).
